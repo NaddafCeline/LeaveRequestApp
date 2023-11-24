@@ -1,0 +1,95 @@
+/* App.css */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #e6e6e6; /* Change background color */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+form {
+  background: #f9f9f9; /* Change form background color */
+  padding: 30px; /* Increase padding for more space */
+  border-radius: 10px; /* Round the corners more */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Add a slightly stronger shadow */
+}
+
+input[type="text"],
+select {
+  width: calc(100% - 20px); /* Adjust width and remove margin for a cleaner look */
+  padding: 15px; /* Increase padding for better spacing */
+  margin: 10px 0;
+  display: inline-block;
+  border: 2px solid #a0a0a0; /* Change border color and thickness */
+  border-radius: 6px; /* Slightly round the corners */
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  width: 100%;
+  background-color: #3498db; /* Change button color */
+  color: white;
+  padding: 16px 20px; /* Adjust padding for a better button size */
+  margin: 15px 0; /* Increase margin for better spacing */
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #2980b9; /* Change button color on hover */
+}
+
+p {
+  color: #555; /* Change text color */
+  font-size: 1.2rem; /* Increase font size for better readability */
+  text-align: center;
+}
+
+/* AdminPortal.css */
+.list-group{
+  display: grid !important;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.container {
+  max-height: 600px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.card-text {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.btn-approve:hover {
+  background-color: #4caf50 !important;
+  border-color: #4caf50 !important;
+  color: #fff;
+}
+
+.btn-reject:hover {
+  background-color: #e57373 !important;
+  border-color: #e57373 !important;
+  color: #fff;
+}
